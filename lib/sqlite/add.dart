@@ -1,11 +1,11 @@
 import 'package:all_persistence_types/sqlite/models/person.dart';
 import 'package:flutter/material.dart';
 
-class AddLanguage extends StatelessWidget {
-  AddLanguage({Key? key}) : super(key: key);
+class AddPerson extends StatelessWidget {
+  AddPerson({Key? key}) : super(key: key);
 
-  final Text title = const Text("Nova Linguagem");
   final _formKey = GlobalKey<FormState>();
+
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _addressController = TextEditingController();
@@ -13,7 +13,7 @@ class AddLanguage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: title),
+        appBar: AppBar(title: const Text("Nova Pessoa")),
         body: Padding(
             padding: const EdgeInsets.all(16),
             child: Form(
